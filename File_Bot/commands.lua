@@ -320,7 +320,7 @@ send(msg.chat_id_, msg.id_,(help_text or Text))
 return false
 end
 if text == 'م8' then
-if not Sudo:User(msg) then
+if not creatorA(msg) then
 send(msg.chat_id_, msg.id_,'*☆⇠ هاذا الامر خاص بمطور*\n*☆⇠ ارسل {م10} لعرض اوامر الاعضاء*')
 return false
 end
@@ -345,7 +345,7 @@ send(msg.chat_id_, msg.id_,(help_text or Text))
 return false
 end
 if text == 'م9' then
-if not Sudo:User(msg) then
+if not creatorA(msg) then
 send(msg.chat_id_, msg.id_,'*☆⇠ هاذا الامر خاص بالمطور الاساسي*\n*☆⇠ ارسل {م10} لعرض اوامر الاعضاء*')
 return false
 end
